@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const colors = {
     primary700: "#1A56DB",
@@ -416,7 +417,9 @@ function StepDados({ data, onChange, onNext }) {
             <div style={s.loginRow}>
                 <span style={s.loginText}>
                     Já tem uma conta?
-                    <span style={s.loginLink}>Entrar</span>
+                    <span style={s.loginLink}>
+                        <Link to="/login">Entrar</Link>
+                    </span>
                 </span>
             </div>
         </div>
