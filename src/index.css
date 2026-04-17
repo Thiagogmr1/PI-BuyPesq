@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -50,20 +52,25 @@
   }
 }
 
-body {
-  margin: 0;
+body: {
+  flex: 1,
+    paddingLeft: 24,
+    paddingRight: 24,
+    paddingTop: 36,
+    paddingBottom: 32,
+    display: "flex",
+    flexDirection: "column",
+    maxWidth: 480, // ← adicione isso
+    width: "100%", // ← e isso
+    margin: "0 auto", // ← e isso
 }
 
+,
+
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 h1,
