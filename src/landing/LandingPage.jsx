@@ -4,6 +4,7 @@
 // <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const NAV_LINKS = ["Como funciona", "Categorias", "Para profissionais", "Contato"];
 
@@ -69,12 +70,17 @@ export default function BuyPesqLanding() {
           </ul>
 
           <div className="hidden md:flex gap-3">
+            <Link to="/login">
             <button className="text-blue-700 border border-blue-700 rounded-full px-5 py-2 text-sm font-medium hover:bg-blue-50 transition-colors">
               Entrar
             </button>
-            <button className="bg-blue-700 text-white rounded-full px-5 py-2 text-sm font-medium hover:bg-blue-800 transition-colors shadow-md shadow-blue-200">
-              Cadastrar
-            </button>
+          </Link>
+
+            <Link to="/register">
+              <button className="bg-blue-700 text-white rounded-full px-5 py-2 text-sm font-medium hover:bg-blue-800 transition-colors shadow-md shadow-blue-200">
+                Cadastrar
+              </button>
+            </Link>
           </div>
 
           {/* Hamburger */}
@@ -97,7 +103,9 @@ export default function BuyPesqLanding() {
             ))}
             <div className="flex gap-3 mt-4">
               <button className="flex-1 text-blue-700 border border-blue-700 rounded-full py-2.5 text-sm font-medium">Entrar</button>
-              <button className="flex-1 bg-blue-700 text-white rounded-full py-2.5 text-sm font-medium">Cadastrar</button>
+              <Link to="/register">
+                <button className="flex-1 bg-blue-700 text-white rounded-full py-2.5 text-sm font-medium">Cadastrar</button>
+              </Link>
             </div>
           </div>
         )}
@@ -139,9 +147,12 @@ export default function BuyPesqLanding() {
                 onChange={(e) => setSearchVal(e.target.value)}
                 className="flex-1 px-4 py-3 text-slate-700 placeholder-slate-400 text-sm outline-none bg-transparent"
               />
-              <button className="bg-blue-700 hover:bg-blue-800 text-white rounded-xl px-6 py-3 text-sm font-semibold transition-colors whitespace-nowrap">
-                Buscar
-              </button>
+
+              <Link to="/login">
+                <button className="bg-blue-700 hover:bg-blue-800 text-white rounded-xl px-6 py-3 text-sm font-semibold transition-colors whitespace-nowrap">
+                  Buscar
+                </button>
+              </Link>
             </div>
 
             <p className="text-blue-200 text-xs mt-3">
@@ -275,10 +286,12 @@ export default function BuyPesqLanding() {
                 </li>
               ))}
             </ul>
-
+            
+          <Link to="/register">
             <button className="bg-blue-600 hover:bg-blue-500 text-white rounded-full px-8 py-4 font-semibold transition-colors shadow-lg shadow-blue-900/40">
               Quero me cadastrar como profissional
             </button>
+          </Link>
           </div>
 
           {/* Mockup profissional */}

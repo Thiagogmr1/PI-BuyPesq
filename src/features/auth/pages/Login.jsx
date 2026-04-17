@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function EyeIcon({ visible }) {
     return visible ? (
@@ -35,6 +36,7 @@ export default function Login() {
     const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(false);
     const [btnScale, setBtnScale] = useState(1);
+    const navigate = useNavigate();
 
     function validate() {
         const errs = {};
@@ -219,9 +221,13 @@ export default function Login() {
                     <div className="text-center mt-auto">
                         <span className="text-[14px] text-[#4B5563]">
                             Não tem uma conta?
-                            <span className="text-[#1A56DB] font-bold ml-[4px] cursor-pointer">
+
+                            <Link
+                                to="/register"
+                                className="text-[#1A56DB] font-bold ml-[4px] cursor-pointer"
+                            >
                                 Cadastre-se
-                            </span>
+                            </Link>
                         </span>
                     </div>
                 </div>
