@@ -88,7 +88,7 @@ export default function Login() {
                 </div>
 
                 {/* ── PAINEL DIREITO ── */}
-                <div className="w-full lg:w-[50%] flex items-center justify-center bg-gray-50 px-8">
+                <div className="w-full lg:w-[50%] flex items-center justify-center bg-[#F8FAFC] lg:bg-gray-50 px-8">
 
                     <div className="w-full max-w-[400px]">
 
@@ -103,7 +103,7 @@ export default function Login() {
                         {/* Cabeçalho */}
                         <header className="mb-10 text-center">
 
-                            <p className="mt-2 text-base text-gray-600">
+                            <p className="mt-2 text-base text-gray-900">
                                 Acesse sua conta no <span className="font-medium text-blue-600">BuyPesq</span>
                             </p>
                         </header>

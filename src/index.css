@@ -52,20 +52,13 @@
   }
 }
 
-body: {
-  flex: 1,
-    paddingLeft: 24,
-    paddingRight: 24,
-    paddingTop: 36,
-    paddingBottom: 32,
-    display: "flex",
-    flexDirection: "column",
-    maxWidth: 480, // ← adicione isso
-    width: "100%", // ← e isso
-    margin: "0 auto", // ← e isso
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-,
 
 #root {
   min-height: 100svh;
