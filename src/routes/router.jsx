@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import LandingPage from '../landing/LandingPage'
 import Login from '../features/auth/pages/Login'
 import Register from '../features/auth/pages/Register'
+import SelectProfile from '../features/auth/pages/SelectProfile'
 
 function AppRoutes() {
     return (
@@ -10,6 +11,7 @@ function AppRoutes() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/select-profile" element={<SelectProfile />} />
         </Routes>
     )
 }
