@@ -284,7 +284,7 @@ function StepSucesso() {
             <p className="text-sm text-gray-500 mb-8 leading-relaxed">
                 Bem-vindo ao BuyPesq. Agora escolha como quer usar a plataforma.
             </p>
-            <button onClick={() => navigate("/select-profile")}
+            <button onClick={() => navigate("/home")}
                 className="w-full h-11 bg-[#1A56DB] hover:bg-[#1648c0] text-white rounded-lg text-sm font-bold transition-all active:scale-[0.98]">
                 Continuar para o app
             </button>
